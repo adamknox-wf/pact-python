@@ -308,7 +308,7 @@ class Request(FromTerms):
         :type query: str or dict
         """
         self.method = method
-        self.path = from_term(path)
+        self.path = from_term(path) # https://github.com/realestate-com-au/pact/blob/866d603aefdc8a21b796712d5450344145c3a7b3/spec/integration/consumer_with_pact_term_in_path.rb
         self.body = from_term(body)
         self.headers = from_term(headers)
         self.query = from_term(query)
